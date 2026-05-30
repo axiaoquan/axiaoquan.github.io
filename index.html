@@ -1,0 +1,189 @@
+<!-- @File: index.html -->
+<!-- @Desc: Personal homepage (template adapted from liujf69/sysu19351118) -->
+
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <title>Your Name - Homepage</title>
+        <link rel="stylesheet" href="assets/css/main.css"/>
+        <link rel="stylesheet" href="assets/css/academicons.css"/>
+        <!-- Font Awesome 5 via CDN (icons used in sidebar) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    </head>
+
+    <body>
+        <!-- Top navigation -->
+        <div class="masthead">
+            <div class="masthead__inner-wrap">
+                <div class="masthead__menu">
+                    <nav id="site-nav" class="greedy-nav">
+                        <button>
+                            <div class="navicon"></div>
+                        </button>
+                        <ul class="visible-links">
+                            <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
+                                <a href="#-About-me">Homepage</a>
+                            </li>
+                            <li class="masthead__menu-item"><a href="/#-About-me">About-me</a></li>
+                            <li class="masthead__menu-item"><a href="/#-Work-Experience">Work-Experience</a></li>
+                            <li class="masthead__menu-item"><a href="/#-News">News</a></li>
+                            <li class="masthead__menu-item"><a href="/#-Education">Educations</a></li>
+                            <li class="masthead__menu-item"><a href="/#-Projects">Projects</a></li>
+                            <li class="masthead__menu-item"><a href="/#-Skills">Skills</a></li>
+                        </ul>
+                        <ul class="hidden-links hidden"></ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <div id="main" role="main">
+            <!-- Sticky sidebar with avatar / name / contact -->
+            <div class="sidebar sticky">
+                <div itemscope itemtype="http://schema.org/Person" class="profile_box">
+                    <style>
+                        .author__avatar img { width: 150px; height: auto; border-radius: 50%; }
+                    </style>
+
+                    <div class="author__avatar">
+                        <!-- Replace with your own photo. Currently using a placeholder SVG. -->
+                        <img src="images/avatar.svg" alt="avatar">
+                    </div>
+
+                    <div class="author__content">
+                        <h3 class="author__name">Your Name</h3>
+                        <p class="author__bio">Tencent | Software Engineer</p>
+                    </div>
+
+                    <div class="author__urls-wrapper">
+                        <ul class="author__urls social-icons">
+                            <li>
+                                <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>Shenzhen, China
+                            </li>
+                            <li>
+                                <a href="mailto:your_email@example.com"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i>Email</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/axiaoquan"><i class="fab fa-fw fa-github" aria-hidden="true"></i>Github</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+                <div class="page__inner-wrap">
+                    <section class="page__content" itemprop="text">
+
+                        <!-- About me -->
+                        <p><span class="anchor" id="-About-me"></span></p>
+                        <h1>🧍‍♂️ About-me</h1>
+                        <p>
+                            Hi, I'm <b>Your Name</b>. I currently work at <b>Tencent</b>, focusing on
+                            <b>Online Advertising / Recommender Systems / Backend Engineering</b>
+                            (replace this with your own one-liner). Outside of work, I'm interested in
+                            <b>distributed systems</b>, <b>machine learning</b>, and clean code.
+                        </p>
+
+                        <!-- Work Experience -->
+                        <p><span class="anchor" id="-Work-Experience"></span></p>
+                        <h1>🧱 Work Experience</h1>
+                        <ul>
+                            <li>
+                                <em>2026.05 - Now</em>: <a href="https://www.tencent.com/">Tencent</a>
+                                — Software Engineer, working on <strong>online advertising / recommender systems</strong>.
+                            </li>
+                            <li>
+                                <em>YYYY.MM - YYYY.MM</em>: Previous company / internship — short description.
+                            </li>
+                        </ul>
+
+                        <!-- News -->
+                        <h1 id="-News">🔥 News</h1>
+                        <ul>
+                            <li>
+                                <em>2026.05</em>: 🎉 Joined Tencent as a Software Engineer.
+                            </li>
+                            <li>
+                                <em>2026.MM</em>: Add anything noteworthy here (a paper, a release, a talk, an award).
+                            </li>
+                        </ul>
+
+                        <!-- Education -->
+                        <h1 id="-Educations">📖 Educations</h1>
+                        <ul>
+                            <li>
+                                <em>YYYY.09-YYYY.06</em>: <b>M.S. / B.S. in Computer Science, Your University</b>
+                            </li>
+                            <li>
+                                <em>YYYY.09-YYYY.06</em>: <b>B.S. in Your Major, Your University</b>
+                            </li>
+                        </ul>
+
+                        <!-- Projects (replaces "Publications" section) -->
+                        <h1 id="-Projects">📝 Selected Projects</h1>
+                        <ul>
+                            <li>
+                                <em></em><b>Project A</b> —
+                                <span style="color: blue;"><b>One-line summary of what it does.</b></span>
+                                Stack: Python, PyTorch. <a href="#">[Code]</a>
+                            </li>
+                            <li>
+                                <em></em><b>Project B</b> —
+                                One-line summary. Built X using Y, achieving Z.
+                                <a href="#">[Code]</a> <a href="#">[Demo]</a>
+                            </li>
+                            <li>
+                                <em></em><b>This homepage</b> —
+                                Static HTML/CSS personal site, deployed via GitHub Pages.
+                                Forked structure from
+                                <a href="https://github.com/sysu19351118/sysu19351118.github.io">sysu19351118</a>
+                                / <a href="https://github.com/liujf69/liujf69.github.io">liujf69</a>.
+                            </li>
+                        </ul>
+
+                        <!-- Honors -->
+                        <h1 id="-Honors-and-Awards">🎖 Honors and Awards</h1>
+                        <ul>
+                            <li><em></em>Add an award / scholarship / competition here.</li>
+                            <li><em></em>Add another one here.</li>
+                        </ul>
+
+                        <!-- Skills -->
+                        <h1 id="-Skills">🔧 Skills</h1>
+                        <ul>
+                            <li>
+                                <em></em>Programming Languages: Proficient in
+                                <span style="color: blue;"><b>C++, Python</b></span>,
+                                familiar with <span style="color: blue;"><b>Scala, Go</b></span>.
+                            </li>
+                            <li>
+                                <em></em>Frameworks &amp; Tools: Proficient in
+                                <span style="color: blue;"><b>Spark, Linux, Git</b></span>,
+                                familiar with <span style="color: blue;"><b>PyTorch, Docker</b></span>.
+                            </li>
+                            <li>
+                                <em></em>Interests:
+                                <span style="color: blue;"><b>Distributed Systems, Recommender Systems, Online Ads</b></span>.
+                            </li>
+                        </ul>
+
+                    </section>
+                </div>
+            </article>
+        </div>
+
+        <script src="assets/js/main.min.js"></script>
+        <footer>
+            <p style="text-align:center; color:#999; font-size:13px;">
+                Made with ❤ — adapted from
+                <a href="https://github.com/liujf69/liujf69.github.io">liujf69</a>'s template.
+            </p>
+        </footer>
+    </body>
+</html>
